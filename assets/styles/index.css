@@ -1,0 +1,79 @@
+.main{
+    padding: 0.3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .intro,.skills{
+    display: flex;
+    flex-direction: row;
+    /*width: 100%;*/
+    padding: 1rem;
+    justify-content: center;
+}
+
+.main .intro,.skillsMainBox{
+    margin: 0.8rem 0;
+}
+
+.main .text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 60%;
+    text-align: left;
+}
+
+.main .dp{
+    /*background-color: antiquewhite;*/
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main .dp img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10rem;
+}
+
+.main .skillsMainBox,.profilesMainBox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.main .skillsMainBox .skills .skill,
+.main .profilesMainBox .profiles .profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .skillsMainBox .skills .skill .stars{
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 768px) {
+    .main .intro{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .text{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .main .skillsMainBox .skills{
+        display: flex;
+        flex-direction: column;
+    }
+}
