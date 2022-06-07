@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+.main{
+    padding: 0.3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .note{
+    padding: 0.3rem;
+    width: 90%;
+    /*height: 100px;*/
+    background-color: #F3E779;
+    /*border-radius: 1rem;*/
+    color: rgba(255, 123, 123, 0.64);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main .note .text{
+    background: transparent;
+}
+
+.main .note .profilePic{
+    background-color: #F3E779;
+    padding: 10px;
+    /*border-radius: 1rem;*/
+}
+
+.main .note .profilePic img{
+    width: 200px;
+    border-radius: 1rem;
+}
+
+.main .note .text{
+    text-align: left;
+}
+
+.main .note h1{
+    background: transparent;
+    color: #656565;
+    display: inline;
+    font-family: 'Oswald', sans-serif;
+}
+
+.main .note p{
+    background: transparent;
+    color: #919191;
+    display: inline;
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+}
+
+.main .cvBtn{
+    margin: 1rem 0;
+    width: 10rem;
+    height: 2rem;
+    border: none;
+    /*background-color: rgba(204, 131, 0, 0.66);*/
+    cursor: pointer;
+    color: orange;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+    .main{
+        width: 100%;
+        /*padding: 0.3rem 0.3rem;*/
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*align-items: center;*/
+    }
+
+    .main .note{
+        flex-direction: column;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.54);
+    }
+
+    .main .note p{
+        font-size: 0.95rem;
+    }
+}
