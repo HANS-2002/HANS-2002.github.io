@@ -12,21 +12,44 @@
 </head>
 <body>
     <div class="row header">
-        <div class="col-3 portfolioName">Hans's Portfolio</div> <!-- 25% -->
-        <div class="col-8">Scam 2</div> <!-- 75% -->
-        <div class="col-1"><i class="fa-solid themeBtn fa-lightbulb" onclick="changeTheme()"></i></div>
+        <div class="mobileHeader">
+            <div class="col-12 firstRow">
+                <div class="portfolioName">Hans's Portfolio</div>
+                <div class="themeBtnDiv">
+                    <i class="fa-solid themeBtn themeBtn1 fa-lightbulb" onclick="changeTheme1()"></i>
+                </div>
+            </div>
+            <div class="col-12 menuList">
+                <input type="button" value="Home"/>
+                <input type="button" value="Projects"/>
+                <input type="button" value="Achievements"/>
+                <input type="button" value="About"/>
+            </div>
+        </div>
+        <div class="col-12 desktopHeader">
+            <div class="col-3 portfolioName">Hans's Portfolio</div>
+            <div class="col-8 menuList">
+                <input type="button" value="Home"/>
+                <input type="button" value="Projects"/>
+                <input type="button" value="Achievements"/>
+                <input type="button" value="About"/>
+            </div>
+            <div class="col-1 themeBtnDiv">
+                <i class="fa-solid themeBtn themeBtn2 fa-lightbulb" onclick="changeTheme2()"></i>
+            </div>
+        </div>
     </div>
     <div class="row main">
 
     </div>
     <div class="row footer">
         <div class="col-12 socials">
-            <i class="fa-solid fa-envelope"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-twitter"></i>
+            <a href="mailto:pattnaikhans@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/HANS-2002" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/hanspattnaik/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/hanspattnaik" target="_blank"><i class="fa-brands fa-twitter"></i></a>
         </div>
-        <div class="col-12"> Copyrighted under Hans Pattnaik &copy; </div>
+        <div class="col-12 copyright"> Copyrighted under Hans Pattnaik &copy; </div>
     </div>
     <script src="./assets/scripts/main.js"></script>
 </body>
