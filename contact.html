@@ -6,7 +6,7 @@
     <title>Hans Pattnaik</title>
     <link rel="shortcut icon" href="./assets/codeImg.jpg" type="image/x-icon">
     <link href="assets/styles/main.css" rel="stylesheet">
-    <link href="assets/styles/about.css" rel="stylesheet">
+    <link href="assets/styles/contact.css" rel="stylesheet">
     <link href="assets/styles/header.css" rel="stylesheet">
     <link href="assets/styles/footer.css" rel="stylesheet">
     <link href="assets/styles/lightTheme.css" rel="stylesheet" id="themeLink">
@@ -14,7 +14,7 @@
           integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
-<body>
+<body onload="themeUpdate()">
 <div class="row header">
     <div class="mobileHeader">
         <div class="col-12 firstRow">
@@ -42,49 +42,53 @@
     </div>
 </div>
 <div class="row main">
-    <div class="note">
-        <div class="col-3 profilePic">
-            <img src="./assets/pp.jpg" alt="DP" />
-        </div>
-        <div class="col-9 text">
-            <h1>HI!</h1>
-            <p>
-                <span style="font-size: 16px; background: transparent;">👋</span>
-                I'm
-                <span style="color: rgba(0,87,24,0.86); background: transparent">
-                    Hans Pattnaik
-                </span>. I am currently a CS junior at
-                <a href="https://kiit.ac.in/"
-                   target="_blank"
-                   style="background: transparent; color: #ff4d4d; font-size: 1.3rem; text-decoration: none">
-                    KIIT University
-                </a>, ODISHA.
-                <br />
-                I define myself as a competent full stack developer and competitive
-                programmer. I am open to doing any open source projects and/or code
-                discussions.
-                <br/>
-                <br/>
-                You can find me at
+    <div class="row contactMainBox">
+        <h1>
+            <u style="color: rgba(255,26,86,0.76); font-size: 1.8rem">CONTACT ME</u>
+        </h1>
+        <div class="text col-9">
+            <p style="background: transparent">
+                Feel free to reach out to me at
                 <a href="mailto:pattnaikhans@gmail.com"
-                   style="background: transparent; color: #ff4d4d; font-size: 1.1rem; text-decoration: none">
+                   style="background: transparent; color: #ff7b92; text-decoration: none;">
                     pattnaikhans@gmail.com
                 </a>
-                or alternatively in links provided in the footer.
+                . Alternatively, on any of these platforms -
             </p>
+            <div class="col-12 socialContacts">
+                <a href="https://t.me/hans_pat"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://discordapp.com/users/HANSPAT#3324/" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.linkedin.com/in/hanspattnaik/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/hanspattnaik" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
         </div>
+        <br/>
+        <a href="./assets/cv.pdf">
+            <button class="cvBtn">View my CV <i class="fa-solid fa-arrow-right"
+                                                style="background: transparent; color: orange"></i></button>
+        </a>
     </div>
-    <br/>
-    <a href="./assets/cv.pdf"><button class="cvBtn" >View my CV <i class="fa-solid fa-arrow-right" style="background: transparent; color: orange"></i></button></a>
 </div>
 <div class="row footer">
     <div class="col-12 socials">
         <a href="mailto:pattnaikhans@gmail.com"><i class="fa-solid fa-envelope"></i></a>
         <a href="https://github.com/HANS-2002" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/hanspattnaik/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/hanspattnaik/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>
         <a href="https://twitter.com/hanspattnaik" target="_blank"><i class="fa-brands fa-twitter"></i></a>
     </div>
-    <div class="col-12 copyright"> Copyrighted under Hans Pattnaik &copy;</div>
+    <div class="col-12 copyright">
+        <span style="font-weight: 600;">
+            &copy; 2022
+        </span>
+        <span style="font-weight: 900; margin: 0 0.6rem">
+            •
+        </span>
+        <a href="./index.html" style="color: #ff7b92; cursor: pointer; text-decoration: none;font-weight: 600">
+            Hans Pattnaik
+        </a>
+    </div>
 </div>
 <script src="./assets/scripts/main.js"></script>
 </body>

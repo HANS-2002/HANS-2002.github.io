@@ -33,6 +33,10 @@
     display: inherit;
 }
 
+.portfolioName{
+    padding-right: 2rem;
+}
+
 .portfolioName a{
     display: inline;
     text-decoration: none;

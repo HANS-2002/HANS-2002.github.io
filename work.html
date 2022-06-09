@@ -6,6 +6,7 @@
     <title>Hans Pattnaik</title>
     <link rel="shortcut icon" href="./assets/codeImg.jpg" type="image/x-icon">
     <link href="assets/styles/main.css" rel="stylesheet">
+    <link href="assets/styles/work.css" rel="stylesheet">
     <link href="assets/styles/header.css" rel="stylesheet">
     <link href="assets/styles/footer.css" rel="stylesheet">
     <link href="assets/styles/lightTheme.css" rel="stylesheet" id="themeLink">
@@ -13,7 +14,7 @@
           integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
-<body>
+<body onload="themeUpdate()">
 <div class="row header">
     <div class="mobileHeader">
         <div class="col-12 firstRow">
@@ -41,7 +42,43 @@
     </div>
 </div>
 <div class="row main">
-    <h1>Projects Page</h1>
+    <div class="row workMainBox">
+        <h1>
+            <u style="color: rgba(255,26,86,0.76); font-size: 1.8rem">ACHIEVEMENTS</u>
+        </h1>
+        <div class="col-10 workBox">
+            <div class="workName">
+                Achievement Name
+            </div>
+            <div class="workDescription col-12">
+                <div class="workImage col-5">
+                    Achievement Image
+                </div>
+                <div class="workText col-7">
+                    Achievement Text
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row workMainBox">
+        <h1>
+            <u style="color: rgba(255,26,86,0.76); font-size: 1.8rem">PROJECTS</u>
+        </h1>
+        <div class="col-10 workBox">
+            <div class="workName">
+                Project Name
+            </div>
+            <div class="workDescription col-12">
+                <div class="workImage col-5">
+                    Project Image
+                </div>
+                <div class="workText col-7">
+                    Project Text
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="row footer">
     <div class="col-12 socials">
@@ -50,7 +87,17 @@
         <a href="https://www.linkedin.com/in/hanspattnaik/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         <a href="https://twitter.com/hanspattnaik" target="_blank"><i class="fa-brands fa-twitter"></i></a>
     </div>
-    <div class="col-12 copyright"> Copyrighted under Hans Pattnaik &copy;</div>
+    <div class="col-12 copyright">
+        <span style="font-weight: 600;">
+            &copy; 2022
+        </span>
+        <span style="font-weight: 900; margin: 0 0.6rem">
+            •
+        </span>
+        <a href="./index.html" style="color: #ff7b92; cursor: pointer; text-decoration: none;font-weight: 600">
+            Hans Pattnaik
+        </a>
+    </div>
 </div>
 <script src="./assets/scripts/main.js"></script>
 </body>

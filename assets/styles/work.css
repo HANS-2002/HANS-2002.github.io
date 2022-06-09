@@ -1,0 +1,48 @@
+.main{
+    padding: 0.3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .workMainBox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.main .workBox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.main .workBox .workName, .workDescription, .workImage, .workText{
+    background: transparent;
+}
+
+.main .workBox .workName{
+    color: #ff6767;
+    font-weight: 900;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.main .workBox .workDescription{
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 768px) {
+    .main .workBox{
+        align-items: center;
+    }
+
+    .main .workBox .workDescription{
+        display: flex;
+        flex-direction: column;
+    }
+}
